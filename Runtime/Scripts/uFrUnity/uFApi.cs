@@ -180,20 +180,7 @@
 
 		public static List<uFReader> DiscoverDevices()
 		{
-			int NumberOfDevices;
-
-			var watch = Stopwatch.StartNew();
-
-			UnityEngine.Debug.Log("( All opened readers are closed now ! )" + Environment.NewLine);
-			UnityEngine.Debug.Log("Checking... Create new list... please wait...");
-
-			NumberOfDevices = uFReader.get_reader_count();
-
-			watch.Stop();
-			var elapsedMs = watch.ElapsedMilliseconds;
-			UnityEngine.Debug.Log("ReaderList_UpdateAndGetCount() works " + elapsedMs + " ms");
-
-			UnityEngine.Debug.Log("Devices found: " + NumberOfDevices.ToString());
+			int NumberOfDevices = uFReader.get_reader_count();
 
 			List<uFReader> discovered = new List<uFReader>();
 			for (int i = 0; i < NumberOfDevices; i++)
