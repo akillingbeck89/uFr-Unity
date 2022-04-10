@@ -1,6 +1,6 @@
 {
   "name": "com.andrewk.ufrplugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "uFR Reader Plugin",
   "description": "Unity package for use with uFR readers",
   "unity": "2021.1",
