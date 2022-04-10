@@ -123,6 +123,7 @@ namespace uFrUnity
 			Close(ref m_activeReaders);
 		}
 
+#if UNITY_EDITOR || UFR_DEBUG
 		private void OnGUI()
 		{
 			GUI.skin.label.fontSize = 32;
@@ -170,5 +171,6 @@ namespace uFrUnity
 				
 			}
 		}
+#endif
 	}
 }
